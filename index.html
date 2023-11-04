@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio Personal Jeffrey Batista</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script>
+          emailjs.init("2t6Y9ZL2x4wJFO1Y5");
+        
+          document.getElementById("miFormulario").addEventListener("submit", function(event) {
+            event.preventDefault();
+        
+            // Captura los valores del formulario
+            var nombre = document.getElementById("nombre").value;
+            var correo = document.getElementById("correo").value;
+            var telefono = document.getElementById("telefono").value;
+            var mensaje = document.getElementById("mensaje").value;
+        
+            // Envía el correo electrónico
+            emailjs.send("tu_servicio", "tu_plantilla", {
+              from_name: nombre,
+              to_email: "jeffry1311@gmail.com", // Tu dirección de correo electrónico
+              message: mensaje,
+            })
+              .then(function(response) {
+                alert("Mensaje enviado correctamente.");
+              })
+              .catch(function(error) {
+                alert("Hubo un error al enviar el mensaje: " + error);
+              });
+          });
+        </script>
+        
+    </head>
+    <body>
+        <!--header site-->
+        <header>
+            <div class="logo"><span>J</span>effrey.</div>
+            <ul class="navlist">
+                <li><a href="#inicio" style="--i:1;">Inicio</a></li>
+                <li><a href="#sobremi" style="--i:2;">Sobre Mi</a></li>
+                <li><a href="#skills" style="--i:3;" >Skills</a></li>
+                <li><a href="#formacion" style="--i:4;">Formación Académica</a></li>
+                <li><a href="#projects" style="--i:6;">Proyectos</a></li>
+                <li><a href="#contacto" style="--i:7;">Contacto</a></li>
+            </ul>
+            <div id="menu-icon" class="bx bx-menu"></div> 
+        </header>
+
+         <!--home section-->
+         <section id="inicio" class="home">
+            <div class="home-content scroll-scale">
+                <h1>¡Hola! Soy Jeffrey A. Batista Rodriguez</h1>
+                <div class="change-text">
+                    <h3>Y soy</h3>
+                    <h3>
+                        <span class="word">Estudiante&nbsp;Universidad&nbsp;O&M&nbsp;Santiago</span>
+                        <span class="word">Licenciado&nbsp;Matematica</span>
+                    </h3>
+                </div>
+                <p>Estudiante de la carrera de educacion en la universidad O&M Republica dominicana en la ciudad de santiago. 
+                <div class="info-box">
+                    <div class="email-info">
+                        <h5>E-mail :</h5>
+                        <span>jeffry1311@gmail.com</span>
+                    </div>
+                    <div class="telefono-info">
+                        <h5>Celular :</h5>
+                        <span>829-474-1630</span>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <a href="https://www.dropbox.com/scl/fi/pgs7nkaxj6dfmmrkzc9jf/CV-Jeffrey-Aristides-Batista-Rodr-guez.pdf?rlkey=wsctw50s4br3fpcatrvrbzcg4&dl=0" class="btn">Descargar CV</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jeffry-batista-a19774173/"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/Jeffrey1311?tab=repositories"><i class='bx bxl-github'></i></a>
+                </div>
+
+            </div>
+
+            <div class="home-image scroll-scale">
+                <div class="img-box">
+                    <img src="formacion/j-b-r.png" alt="">
+                </div>
+
+                <div class="liquid-shape">
+                    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                        <path fill="#38B6FF">
+                          <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
+                            values="
+                            M431.5,327Q373,404,287.5,432.5Q202,461,141.5,396.5Q81,332,56.5,238.5Q32,145,116,89Q200,33,286,64.5Q372,96,431,173Q490,250,431.5,327Z;
+                      
+                            M437.5,341Q395,432,300.5,438Q206,444,135,392Q64,340,77,256.5Q90,173,148,114.5Q206,56,302.5,59.5Q399,63,439.5,156.5Q480,250,437.5,341Z;
+
+                            M425.5,334.5Q385,419,293,442.5Q201,466,145.5,396.5Q90,327,89.5,250Q89,173,144.5,102Q200,31,292.5,56Q385,81,425.5,165.5Q466,250,425.5,334.5Z;
+
+                            M407.5,327.5Q373,405,288,430.5Q203,456,135.5,397Q68,338,55,244Q42,150,126.5,113.5Q211,77,304,71.5Q397,66,419.5,158Q442,250,407.5,327.5Z;
+
+                            M411.5,324.5Q369,399,284.5,433.5Q200,468,132,403.5Q64,339,46.5,241Q29,143,112.5,79Q196,15,301,35Q406,55,430,152.5Q454,250,411.5,324.5Z;
+
+                            M400,319Q360,388,279.5,431.5Q199,475,141.5,402.5Q84,330,88,252Q92,174,146.5,105.5Q201,37,299.5,50.5Q398,64,419,157Q440,250,400,319Z;
+
+                            M404.73962,321.63312Q364.213,393.26624,280.02662,440.97924Q195.84025,488.69224,140.97338,408.81949Q86.1065,328.94675,83.787,248.84025Q81.46751,168.73376,141.23376,102.86688Q201,37,293.18051,58.39937Q385.36101,79.79873,415.31363,164.89937Q445.26624,250,404.73962,321.63312Z;
+
+                            M405.5,329.5Q377,409,289,436Q201,463,126,404.5Q51,346,69,259Q87,172,148.5,122.5Q210,73,285.5,92Q361,111,397.5,180.5Q434,250,405.5,329.5Z;
+
+                            M431.5,327Q373,404,287.5,432.5Q202,461,141.5,396.5Q81,332,56.5,238.5Q32,145,116,89Q200,33,286,64.5Q372,96,431,173Q490,250,431.5,327Z;
+                            ">
+                          </animate>
+                        </path>
+                      </svg>
+                      
+                </div>
+
+                <div class="liquid-shape">
+                    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                        <path fill="#38B6FF">
+                          <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
+                            values="
+                            M431.5,327Q373,404,287.5,432.5Q202,461,141.5,396.5Q81,332,56.5,238.5Q32,145,116,89Q200,33,286,64.5Q372,96,431,173Q490,250,431.5,327Z;
+                      
+                            M437.5,341Q395,432,300.5,438Q206,444,135,392Q64,340,77,256.5Q90,173,148,114.5Q206,56,302.5,59.5Q399,63,439.5,156.5Q480,250,437.5,341Z;
+
+                            M425.5,334.5Q385,419,293,442.5Q201,466,145.5,396.5Q90,327,89.5,250Q89,173,144.5,102Q200,31,292.5,56Q385,81,425.5,165.5Q466,250,425.5,334.5Z;
+
+                            M407.5,327.5Q373,405,288,430.5Q203,456,135.5,397Q68,338,55,244Q42,150,126.5,113.5Q211,77,304,71.5Q397,66,419.5,158Q442,250,407.5,327.5Z;
+
+                            M411.5,324.5Q369,399,284.5,433.5Q200,468,132,403.5Q64,339,46.5,241Q29,143,112.5,79Q196,15,301,35Q406,55,430,152.5Q454,250,411.5,324.5Z;
+
+                            M400,319Q360,388,279.5,431.5Q199,475,141.5,402.5Q84,330,88,252Q92,174,146.5,105.5Q201,37,299.5,50.5Q398,64,419,157Q440,250,400,319Z;
+
+                            M404.73962,321.63312Q364.213,393.26624,280.02662,440.97924Q195.84025,488.69224,140.97338,408.81949Q86.1065,328.94675,83.787,248.84025Q81.46751,168.73376,141.23376,102.86688Q201,37,293.18051,58.39937Q385.36101,79.79873,415.31363,164.89937Q445.26624,250,404.73962,321.63312Z;
+
+                            M405.5,329.5Q377,409,289,436Q201,463,126,404.5Q51,346,69,259Q87,172,148.5,122.5Q210,73,285.5,92Q361,111,397.5,180.5Q434,250,405.5,329.5Z;
+
+                            M431.5,327Q373,404,287.5,432.5Q202,461,141.5,396.5Q81,332,56.5,238.5Q32,145,116,89Q200,33,286,64.5Q372,96,431,173Q490,250,431.5,327Z;
+                            ">
+                          </animate>
+                        </path>
+                      </svg>
+                      
+                </div>
+            </div>
+
+        </section>
+
+        <!--about section-->
+        <section id="sobremi" class="about">
+            <div class="img-about scroll-scale">
+                <img src="formacion/j-b-r2.png" alt="">
+                <div class="info-about1">
+                    <span></span>
+                    <p></p>
+                </div>
+                <div class="info-about2">
+                    <span></span>
+                    <p></p>
+                </div>
+                <div class="info-about3">
+                    <span></span>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="about-content scroll-scale">
+                <span>Introducción</span>
+                <h2>Sobre Mi</h2>
+                <h3></h3>
+                <p>Estudiante de la carrera de Educacion en el area de matematica y fisica en la ciudad de santiago. 
+                  apesar de eso mi pasión es la electrónica, programación y la búsqueda de herramientas innovadoras para solucionar problemas por medio de la tecnología.
+                  Empecé en el mundo de la informatica principalmente en el ensamblaje de de dispositivos electronicos como las computadoras y telefonos.</p>
+               
+
+                </div>
+            </div>
+        </section>
+
+      <!--Skills section-->
+<section id="skills" class="skills">
+    <div class="main-text scroll-scale">
+      <span>Habilidades Importantes</span>
+      <h2>Técnicas y Profesionales</h2>
+    </div>
+  
+    <div class="skill-main">
+      <div class="skill-left scroll-scale">
+        <h3>Habilidades Duras</h3>
+        <div class="skill-bar">
+          <div class="info">
+            <p>Programación</p>
+            <p>60%</p>
+          </div>
+          <div class="bar">
+            <span class="programacion"></span>
+          </div>
+        </div>
+  
+        <div class="skill-bar">
+          <div class="info">
+            <p>Electrónica</p>
+            <p>80%</p>
+          </div>
+          <div class="bar">
+            <span class="electronica"></span>
+          </div>
+        </div>
+  
+        <div class="skill-bar">
+          <div class="info">
+            <p>Desarrollo Web</p>
+            <p>60%</p>
+          </div>
+          <div class="bar">
+            <span class="desarrollo"></span>
+          </div>
+        </div>
+  
+        <div class="skill-bar">
+          <div class="info">
+            <p>HTML</p>
+            <p>80%</p>
+          </div>
+          <div class="bar">
+            <span class="html"></span>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="info">
+            <p>GITHUB</p>
+            <p>80%</p>
+          </div>
+          <div class="bar">
+            <span class="html"></span>
+          </div>
+        </div>
+  
+        <div class="skill-bar">
+          <div class="info">
+            <p>CSS</p>
+            <p>80%</p>
+          </div>
+          <div class="bar">
+            <span class="css"></span>
+          </div>
+        </div>
+      </div>
+  
+      <!--Skills RIGHT section-->
+      <div class="skill-right scroll-scale">
+        <h3>Habilidades Blandas</h3>
+        <div class="skill-bar">
+          <div class="info">
+            <p>comunicación</p>
+            <p>90%</p>
+          </div>
+          <div class="bar">
+            <span class="aleman"></span>
+          </div>
+        </div>
+  
+        <div class="skill-bar">
+          <div class="info">
+            <p>Inglés</p>
+            <p>85%</p>
+          </div>
+          <div class="bar">
+            <span class="ingles"></span>
+          </div>
+        </div>
+  
+        <div class="skill-bar">
+          <div class="info">
+            <p>Liderazgo</p>
+            <p>95%</p>
+          </div>
+          <div class="bar">
+            <span class="liderazgo"></span>
+          </div>
+        </div>
+  
+        <div class="skill-bar">
+          <div class="info">
+            <p>Trabajo en Equipo</p>
+            <p>90%</p>
+          </div>
+          <div class="bar">
+            <span class="trabajo"></span>
+          </div>
+        </div>
+  
+        <div class="skill-bar">
+          <div class="info">
+            <p>Resolución de Problemas</p>
+            <p>90%</p>
+          </div>
+          <div class="bar">
+            <span class="resolucion"></span>
+          </div>
+        </div>
+  
+        <div class="skill-bar">
+          <div class="info">
+            <p>Pensamiento Crítico</p>
+            <p>90%</p>
+          </div>
+          <div class="bar">
+            <span class="pensamiento"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Formación Académica section-->
+  <section>
+    <section id="formacion" class="formacion">
+      <div class="main-text2 scroll-scale">
+        <span></span>
+        <h2>Formación Académica</h2>
+      </div>
+      <div id="portfolio scroll-scale">
+     <div class="container">
+      <div class="work-list scroll-scale">
+       <div class="work scroll-scale">
+        <img src="formacion/O&M.png">
+        <div class="layer">
+          <h3>Universidad O&M</h3>
+          <p>2017 - 2023 | Matematica y Fisica</p>
+        </div>
+       </div>
+       <div class="work">
+        <img src="formacion/infotep.png">
+        <div class="layer">
+          <h3>Infotep</h3>
+          <p>Feb 2022 - Sep 2022 | Manejo de progamas de microsoft</p>
+         </div>
+       </div>
+       <div class="work">
+        <img src="formacion/academlo.png">
+        <div class="layer">
+          <h3>BOOTCAMP ACADEMLO</h3>
+          <p>2023 - 2024 | Desarrollador Web Full Stack </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+ <!--Certificados section-->
+
+<!--Proyectos section-->
+<section class="projects" id="projects">
+  <div class="projects-background">
+  <h2 class="heading">Proyectos <span>Personales</span></h2>
+  <div class="project-container">
+      <div class="project-box">
+          <div class="project-title">
+              <div class="img-project">
+                  <a href="https://cheery-speculoos-acfd88.netlify.app/" target="_blank">
+                      <img src="./formacion/Ecomerce.PNG" alt="" class="project-ico">
+                  </a>
+              </div>
+              <h3>E-commerce</h3>
+          </div>
+      </div>
+
+      <div class="project-box">
+          <div class="project-title">
+              <div class="img-project">
+                  <a href="https://mi-pokedex1311.netlify.app/" target="_blank">
+                      <img src="./formacion/pokedex.png" alt="" class="project-ico">
+                  </a>
+              </div>
+              <h3>Pokédex</h3>
+          </div>
+      </div>
+
+      <div class="project-box">
+          <div class="project-title">
+              <div class="img-project">
+                  <a href="rick-morty-main.netlify.app" target="_blank">
+                      <img src="./formacion/rick-and-morty.PNG" alt="" class="project-ico">
+                  </a>
+              </div>
+              <h3>Rick and Morty</h3>
+          </div>
+      </div>
+
+      <div class="project-box">
+          <div class="project-title">
+              <div class="img-project">
+                  <a href="https://my-ramdom-quote.netlify.app" target="_blank">
+                      <img src="./formacion/fraces.PNG" alt="" class="project-ico">
+                  </a>
+              </div>
+              <h3>Generador de frases</h3>
+          </div>
+      </div>
+
+      <div class="project-box">
+          <div class="project-title">
+              <div class="img-project">
+                  <a href="https://useeffect-y-consumo.netlify.app/" target="_blank">
+                      <img src="./formacion/clima.png" alt="" class="project-ico">
+                  </a>
+              </div>
+              <h3>Tiempo</h3>
+          </div>
+      </div>
+
+      <div class="project-box">
+          <div class="project-title">
+              <div class="img-project">
+                  <a href="https://crud-user-app-main.netlify.app" target="_blank">
+                      <img src="./formacion/crud.png" alt="" class="project-ico">
+                  </a>
+              </div>
+              <h3>CRUD de usuarios</h3>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+
+
+<!--Contacto section-->
+
+<section id="contacto" class="contacto">
+  <div class="main-text">
+    <span></span>
+    <h2>Contacto</h2>
+    <p>
+      <i class='bx bx-envelope'></i>jeffry1311@gmail.com<br>
+      <i class='bx bx-phone'></i>829-474-1630<br>
+    </p>
+  </div>
+  <form id="miFormulario">
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="text" id="correo" placeholder="Correo Electrónico">
+    <input type="text" id="telefono" placeholder="Número Telefónico">
+    <textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+    <div class="btn-box formBtn">
+      <button type="submit" class="btn">Enviar</button>
+      <a href="https://www.dropbox.com/scl/fi/pgs7nkaxj6dfmmrkzc9jf/CV-Jeffrey-Aristides-Batista-Rodr-guez.pdf?rlkey=wsctw50s4br3fpcatrvrbzcg4&dl=0" download="https://www.dropbox.com/scl/fi/pgs7nkaxj6dfmmrkzc9jf/CV-Jeffrey-Aristides-Batista-Rodr-guez.pdf?rlkey=wsctw50s4br3fpcatrvrbzcg4&dl=0" class="btn">Descargar CV</a>
+    </div>
+  </form>  
+</section>
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+  
+
+
+
