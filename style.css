@@ -443,248 +443,64 @@ section{
    margin-bottom: 5rem;
   }
   
-.skills {
-    background: var(--secon-bg-color);
-  }
-  
-  .skill-main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 30px;
-    grid-column-gap: 50px;
-  }
-  
-  .skill-bar {
-    margin-bottom: 2.3rem;
-  }
-  
-  .skill-main h3 {
-    margin-bottom: 2rem;
-    font-size: var(--normal-font);
+  .habilidades {
+    background-color: var(--jet);
+    width: 100%;
+    height: auto;
+}  
+
+.habilidades h1 {
+    display: block;
     text-align: center;
-  }
-  
-  .skill-bar .info {
+    color: var(--white);
+    font-family: 'Cooper Hewitt';
+    font-size: 2.4rem;
+    letter-spacing: .1rem;
+    padding: 6rem 0 5rem 0;
+}
+
+.puntos1-habilidades, .puntos2-habilidades {
+    display: none;
+}
+
+.container_fondoPuntos--habilidades img {
+    display: none;
+}
+
+.cards_container--habilidades {
+    display: grid;
+    grid-template-columns: 13rem 13rem;
+    grid-template-rows: 14rem 14rem 14rem;
+    gap: 3rem;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+.cards--habilidades {
+    background-color: var(--eerie-black);
+    border-radius: 24px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 0 10px;
-  }
-  
-  .skill-bar .bar {
-    width: 100%;
-    height: 10px;
-    background-color: var(--bg-color);
-    border-radius: 25px;
-    margin-top: 10px;
-    position: relative;
-  }
-  
-  .skill-bar .bar span {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    background: var(--hover-color);
-    border-radius: 25px;
-    box-shadow: var(--neon-box-shadow);
-  }
-  
-  .skill-bar .bar .programacion {
-    width: 80%;
-    animation: programacion 2s;
-  }
-  
-  .skill-bar .bar .electronica {
-    width: 80%;
-    animation: electronica 3s;
-  }
-  
-  .skill-bar .bar .desarrollo {
-    width: 70%;
-    animation: desarrollo 4s;
-  }
-  
-  .skill-bar .bar .python {
-    width: 70%;
-    animation: python 5s;
-  }
-  
-  .skill-bar .bar .cad {
-    width: 70%;
-    animation: cad 6s;
-  }
-  
-  .skill-bar .bar .html {
-    width: 80%;
-    animation: html 7s;
-  }
-  
-  .skill-bar .bar .css {
-    width: 80%;
-    animation: css 8s;
-  }
-  
-  .skill-bar .bar .aleman {
-    width: 40%;
-    animation: aleman 2s;
-  }
-  
-  .skill-bar .bar .ingles {
-    width: 85%;
-    animation: ingles 3s;
-  }
-  
-  .skill-bar .bar .comunicacion {
-    width: 90%;
-    animation: comunicacion 4s;
-  }
-  
-  .skill-bar .bar .liderazgo {
-    width: 95%;
-    animation: liderazgo 5s;
-  }
-  
-  .skill-bar .bar .trabajo {
-    width: 90%;
-    animation: trabajo 6s;
-  }
-  
-  .skill-bar .bar .resolucion {
-    width: 90%;
-    animation: resolucion 7s;
-  }
-  
-  .skill-bar .bar .pensamiento {
-    width: 90%;
-    animation: pensamiento 8s;
-  }
-  
-  @keyframes programacion {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 80%;
-    }
-  }
-  
-  @keyframes electronica {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 80%;
-    }
-  }
-  
-  @keyframes desarrollo {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 70%;
-    }
-  }
-  
-  @keyframes python {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 70%;
-    }
-  }
-  
-  @keyframes cad {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 70%;
-    }
-  }
-  
-  @keyframes html {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 80%;
-    }
-  }
-  
-  @keyframes css {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 80%;
-    }
-  }
-  
-  @keyframes aleman {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 40%;
-    }
-  }
-  
-  @keyframes ingles {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 85%;
-    }
-  }
-  
-  @keyframes comunicacion {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 90%;
-    }
-  }
-  
-  @keyframes liderazgo {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 95%;
-    }
-  }
-  
-  @keyframes trabajo {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 90%;
-    }
-  }
-  
-  @keyframes resolucion {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 90%;
-    }
-  }
-  
-  @keyframes pensamiento {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 90%;
-    }
-  }
+    justify-content: center;
+    text-align: center;
+    /* filter: saturate(40%); */
+    width: 13rem;
+    height: 14rem;
+}
+
+.cards--habilidades img {
+    margin-top: .7rem;
+    width: 9rem;
+}
+
+.cards--habilidades p {
+    color: var(--white);
+    font-family: 'Cooper Hewitt';
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
+    margin-bottom: .7rem;
+}
   
   /*FORMACIÓN ACADÉMICA Section css-----------*/
 

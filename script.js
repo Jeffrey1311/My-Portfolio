@@ -39,6 +39,8 @@ changeText();
 setInterval(changeText, 3000)
 
 
+
+
 //circle skill//
 
 const circles = document.querySelectorAll('.circle');
